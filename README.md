@@ -458,6 +458,11 @@ Created Issue #15 to build distribution files.
 ```bash
 python -m build
 ```
+### Output
+dist/
+  *.whl
+  *.tar.gz
+  
 ### Result
 The project now produces distributable artifacts ready for PyPI upload.
 
