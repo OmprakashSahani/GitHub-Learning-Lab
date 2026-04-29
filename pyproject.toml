@@ -1,3 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-learning-lab"
+version = "0.1.0"
+description = "A learning project for GitHub workflows and Python packaging"
+authors = [{ name = "Omprakash Sahani" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+greet = "app.greet:main"
+
 [tool.ruff]
 line-length = 88
 target-version = "py312"
