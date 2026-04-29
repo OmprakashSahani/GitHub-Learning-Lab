@@ -426,3 +426,21 @@ PYTHONPATH=src pytest --cov=app --cov-report=term-missing
 CI now reports test coverage and reached about 90% coverage.
 
 ---
+
+## Completed Workflow 11: Clean Package Metadata
+
+### Issue
+Created Issue #14 to improve package metadata.
+
+### Code Change
+Updated `pyproject.toml` with:
+
+- Improved description
+- License metadata
+- Keywords
+- Project URLs
+
+### Result
+The package metadata is cleaner and ready for publishing preparation.
+
+---
