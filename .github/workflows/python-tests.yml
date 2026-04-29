@@ -18,7 +18,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install pytest ruff
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
 
       - name: Run Ruff (lint)
         run: ruff check .
