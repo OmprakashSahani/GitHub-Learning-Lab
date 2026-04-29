@@ -373,3 +373,4 @@ PYTHONPATH=src pytest
 python src/app/greet.py Om
 
 ---
+> Setup instructions verified and tested.
