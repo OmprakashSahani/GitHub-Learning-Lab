@@ -5,11 +5,18 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "github-learning-lab"
 version = "0.1.0"
-description = "A learning project for GitHub workflows and Python packaging"
+description = "A small Python CLI project for learning GitHub workflows, testing, CI, and packaging."
 authors = [{ name = "Omprakash Sahani" }]
 readme = "README.md"
 requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["github", "python", "cli", "testing", "ci", "packaging"]
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/OmprakashSahani/github-learning-lab"
+Repository = "https://github.com/OmprakashSahani/github-learning-lab"
+Issues = "https://github.com/OmprakashSahani/github-learning-lab/issues"
 
 [project.scripts]
 greet = "app.greet:main"
