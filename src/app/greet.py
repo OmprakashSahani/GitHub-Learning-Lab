@@ -1,4 +1,7 @@
 import argparse
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def greet(name: str) -> str:
@@ -6,6 +9,7 @@ def greet(name: str) -> str:
 
 
 def main() -> None:
+    logger.info("greet CLI started")
     parser = argparse.ArgumentParser(
         description="Print a GitHub learning greeting."
     )
@@ -17,7 +21,10 @@ def main() -> None:
     )
 
     args = parser.parse_args()
-    print(greet(args.name))
+    logger.info("Input name: %s", args.name)
+    message = greet(args.name)
+    logger.info("Output message: %s", message)
+    print(message)
 
 
 if __name__ == "__main__":
