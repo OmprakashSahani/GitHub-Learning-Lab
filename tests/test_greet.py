@@ -1,4 +1,4 @@
-from hello import greet
+from app.greet import greet
 
 
 def test_greet():
