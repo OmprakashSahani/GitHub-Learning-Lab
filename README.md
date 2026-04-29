@@ -323,3 +323,31 @@ PYTHONPATH=src pytest
 The project now follows a cleaner Python src/ layout.
 
 ---
+
+## Completed Workflow 8: Add Requirements File
+
+### Issue
+Created Issue #10 to track dependencies.
+
+### Branch
+Created feature branch for requirements.
+
+### Code Change
+Added:
+
+`requirements.txt`
+
+### Dependencies
+- pytest
+- ruff
+
+### Usage
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+### Result
+Project is now reproducible with defined dependencies.
+
+---
