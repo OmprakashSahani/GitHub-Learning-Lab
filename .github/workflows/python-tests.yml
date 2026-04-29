@@ -27,3 +27,6 @@ jobs:
 
       - name: Run tests with coverage
         run: PYTHONPATH=src pytest --cov=app --cov-report=term-missing
+
+      - name: Build package
+        run: python -m build
