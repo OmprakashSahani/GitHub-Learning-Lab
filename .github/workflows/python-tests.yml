@@ -17,8 +17,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install pytest
-        run: pip install pytest
+      - name: Install dependencies
+        run: pip install pytest ruff
+
+      - name: Run Ruff (lint)
+        run: ruff check .
 
       - name: Run tests
         run: PYTHONPATH=. pytest
