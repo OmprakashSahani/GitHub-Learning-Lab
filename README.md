@@ -444,3 +444,21 @@ Updated `pyproject.toml` with:
 The package metadata is cleaner and ready for publishing preparation.
 
 ---
+
+## Completed Workflow 12: Build Package
+
+### Issue
+Created Issue #15 to build distribution files.
+
+### Code Changes
+- Added `build` dependency
+- Updated GitHub Actions to build package
+
+### Build Command
+```bash
+python -m build
+```
+### Result
+The project now produces distributable artifacts ready for PyPI upload.
+
+---
