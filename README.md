@@ -164,3 +164,37 @@ Deleted branch after merge.
 Issue #4 closed automatically.
 
 ---
+
+## Completed Workflow 3: Add Unit Test
+
+### Issue
+Created Issue #5 to introduce testing.
+
+### Branch
+Created branch:
+
+`5-add-unit-test-for-greet-function`
+
+### Code Change
+Added test file:
+
+`tests/test_greet.py`
+
+### Test Logic
+```python
+from hello import greet
+
+def test_greet():
+    assert greet("Om") == "Hello, Om! Welcome to GitHub."
+```
+### Pull Request
+Opened PR and linked using Closes #5.
+
+### Merge
+Merged into main.
+
+### Cleanup
+Deleted branch after merge.
+
+### Result
+Issue #5 closed automatically.
