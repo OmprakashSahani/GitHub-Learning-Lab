@@ -351,3 +351,25 @@ pip install -r requirements.txt
 Project is now reproducible with defined dependencies.
 
 ---
+
+## Local Setup
+
+### 1. Clone repository
+```bash
+git clone https://github.com/OmprakashSahani/github-learning-lab.git
+cd github-learning-lab
+```
+### 2. Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+### 3. Install dependencies
+pip install -r requirements.txt
+
+### 4. Run tests
+PYTHONPATH=src pytest
+
+### 5. Run CLI
+python src/app/greet.py Om
+
+---
