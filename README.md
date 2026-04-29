@@ -128,3 +128,39 @@ Deleted the feature branch after merge.
 
 ### Result
 Issue #3 was automatically closed using `Closes #3`.
+
+---
+
+## Completed Workflow 2: Add Command-Line Input
+
+### Issue
+Created Issue #4 to enhance functionality.
+
+### Branch
+Created branch:
+
+`4-add-command-line-input-support`
+
+### Code Change
+Updated `hello.py` to accept input from command line using `sys.argv`.
+
+### Example Usage
+```bash
+python hello.py Om
+```
+### Output
+Hello, Om! Welcome to GitHub.
+
+### Pull Request
+Opened PR and linked it using Closes #4.
+
+### Merge
+Merged changes into main.
+
+### Cleanup
+Deleted branch after merge.
+
+### Result
+Issue #4 closed automatically.
+
+---
