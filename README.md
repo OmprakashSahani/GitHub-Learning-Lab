@@ -268,3 +268,26 @@ Code quality and correctness are automatically validated on every change.
 docs: document linting workflow
 
 ---
+
+## Completed Workflow 6: Add Argparse CLI
+
+### Issue
+Created Issue #8 to improve command-line interface.
+
+### Branch
+Created branch:
+
+`8-add-argparse-based-cli`
+
+### Code Change
+Replaced manual `sys.argv` handling with Python `argparse`.
+
+### CLI Usage
+```bash
+python hello.py Om
+```
+### Help Command
+python hello.py --help
+
+### Result
+The script now has a cleaner CLI structure with built-in help support.
