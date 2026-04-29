@@ -232,3 +232,39 @@ PYTHONPATH=. pytest
 ```
 ### Result
 GitHub Actions now automatically runs tests successfully.
+
+---
+
+## Completed Workflow 5: Add Ruff Linting
+
+### Issue
+Created Issue #7 to improve code quality.
+
+### Branch
+Created branch:
+
+`7-add-ruff-linting`
+
+### Code Change
+Added Ruff configuration:
+
+`pyproject.toml`
+
+### CI Enhancement
+Updated GitHub Actions to include:
+
+- Ruff lint check
+- Pytest execution
+
+### Pipeline
+```text
+Lint → Test → Merge
+```
+
+### Result
+Code quality and correctness are automatically validated on every change.
+
+### Commit message:
+docs: document linting workflow
+
+---
