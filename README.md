@@ -291,3 +291,35 @@ python hello.py --help
 
 ### Result
 The script now has a cleaner CLI structure with built-in help support.
+
+---
+
+## Completed Workflow 7: Refactor to `src/` Structure
+
+### Issue
+Created Issue #9 to restructure the project.
+
+### Branch
+Created a feature branch for the refactor.
+
+### Code Change
+Moved application code from root-level `hello.py` into:
+
+`src/app/greet.py`
+
+### Test Update
+Updated test imports from:
+
+```python
+from hello import greet
+to
+from app.greet import greet
+```
+### CI Update
+Updated GitHub Actions test command:
+PYTHONPATH=src pytest
+
+### Result
+The project now follows a cleaner Python src/ layout.
+
+---
