@@ -404,3 +404,25 @@ Updated GitHub Actions to install the package before running tests.
 The project is now installable and runnable as a CLI tool.
 
 ---
+
+## Completed Workflow 10: Add Test Coverage
+
+### Issue
+Created Issue #13 to add coverage reporting.
+
+### Branch
+Created a feature branch for coverage work.
+
+### Code Changes
+- Added `pytest-cov`
+- Updated GitHub Actions to run coverage
+- Added CLI path tests
+
+### CI Command
+```bash
+PYTHONPATH=src pytest --cov=app --cov-report=term-missing
+```
+### Result
+CI now reports test coverage and reached about 90% coverage.
+
+---
