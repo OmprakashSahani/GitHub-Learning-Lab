@@ -25,5 +25,5 @@ jobs:
       - name: Run Ruff (lint)
         run: ruff check .
 
-      - name: Run tests
-        run: PYTHONPATH=src pytest
+      - name: Run tests with coverage
+        run: PYTHONPATH=src pytest --cov=app --cov-report=term-missing
