@@ -374,3 +374,33 @@ python src/app/greet.py Om
 
 ---
 > Setup instructions verified and tested.
+
+---
+
+## Completed Workflow 9: Package as Installable CLI
+
+### Issue
+Created Issue #12 to convert project into a package.
+
+### Branch
+Created packaging branch.
+
+### Code Changes
+- Added `src/app/__init__.py`
+- Updated `pyproject.toml`
+- Defined CLI entry point
+
+### CLI Command
+After installation:
+
+```bash
+pip install -e .
+greet Om
+```
+### CI Update
+Updated GitHub Actions to install the package before running tests.
+
+### Result
+The project is now installable and runnable as a CLI tool.
+
+---
