@@ -198,3 +198,37 @@ Deleted branch after merge.
 
 ### Result
 Issue #5 closed automatically.
+
+---
+
+## Completed Workflow 4: Add GitHub Actions CI
+
+### Issue
+Created Issue #6 to add automated testing.
+
+### Branch
+Created branch:
+
+`6-add-github-actions-test-workflow`
+
+### Code Change
+Added GitHub Actions workflow:
+
+`.github/workflows/python-tests.yml`
+
+### CI Workflow
+The workflow runs on:
+
+- Push
+- Pull Request
+
+### Debugging
+The first CI run failed because Python could not import `hello`.
+
+Fixed it by adding:
+
+```bash
+PYTHONPATH=. pytest
+```
+### Result
+GitHub Actions now automatically runs tests successfully.
