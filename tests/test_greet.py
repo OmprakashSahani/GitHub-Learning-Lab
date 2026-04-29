@@ -19,3 +19,14 @@ def test_main_with_arg(monkeypatch, capsys):
     main()
     captured = capsys.readouterr()
     assert "Hello, Alice!" in captured.out
+
+
+def test_main_logs(monkeypatch, caplog):
+    monkeypatch.setattr(sys, "argv", ["prog", "Bob"])
+
+    with caplog.at_level("INFO"):
+        main()
+
+    assert "greet CLI started" in caplog.text
+    assert "Input name: Bob" in caplog.text
+    assert "Output message: Hello, Bob! Welcome to GitHub." in caplog.text
