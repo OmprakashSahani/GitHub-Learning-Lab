@@ -101,3 +101,30 @@ I will follow this workflow:
 ## Goal
 
 Build strong understanding of real-world GitHub workflows.
+
+---
+
+## Completed Workflow 1: Add Python Script
+
+### Issue
+Created Issue #3 to track the task before writing code.
+
+### Branch
+Created a branch from the issue:
+
+`3-add-a-simple-python-script`
+
+### Code Change
+Added `hello.py` with a basic `greet()` function.
+
+### Pull Request
+Opened a pull request to merge the feature branch into `main`.
+
+### Merge
+Merged the pull request after reviewing the change.
+
+### Cleanup
+Deleted the feature branch after merge.
+
+### Result
+Issue #3 was automatically closed using `Closes #3`.
