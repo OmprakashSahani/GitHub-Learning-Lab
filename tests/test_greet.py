@@ -1,5 +1,6 @@
-from app.greet import greet, main
 import sys
+
+from app.greet import greet, main
 
 
 def test_greet():
